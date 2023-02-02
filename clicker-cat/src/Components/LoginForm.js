@@ -6,17 +6,17 @@ import logo from "../Assets/ClickerCat-logos/ClickerCat-logos_transparent.png";
 const LoginForm = () => {
     return (
       <div className="container is-max-desktop">
-        <section className="section">
-            <div className="logoContainer">
+        <section className="section logo-section">
+          <div className="logoContainer">
             <div className="logo">
-                <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
-            </div>
+          </div>
         </section>
         <section className="section">
           <div class="field">
             <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
+            <div class="control has-icons-right">
               <input
                 class="input is-link is-medium"
                 type="email"
@@ -32,7 +32,7 @@ const LoginForm = () => {
           </div>
           <div class="field">
             <label class="label">Password</label>
-            <div class="control has-icons-left has-icons-right">
+            <div class="control has-icons-right">
               <input
                 class="input is-link is-medium"
                 type="password"
