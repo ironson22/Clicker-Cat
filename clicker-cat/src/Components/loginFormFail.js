@@ -5,7 +5,7 @@ import logo from "../Assets/ClickerCat-logos/ClickerCat-logos_transparent.png";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import dataSource from "../datasource.js";
 
-const LoginForm = () => {
+const LoginFormFail = () => {
   const [newEmail, setNewEmail] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const navigate = useNavigate();
@@ -62,11 +62,12 @@ const LoginForm = () => {
         </section>
         <form onSubmit={handleFormSubmit}>
         <section className="section">
+        <p class="help is-danger">Email or Password Invalid</p>
           <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-right">
               <input
-                class="input is-link is-medium"
+                class="input is-danger is-medium"
                 type="email"
                 placeholder="Email"
                 onChange={updateEmail}
@@ -83,7 +84,7 @@ const LoginForm = () => {
             <label class="label">Password</label>
             <div class="control has-icons-right">
               <input
-                class="input is-link is-medium"
+                class="input is-danger is-medium"
                 type="password"
                 placeholder="Password"
                 onChange={updatePassword}
@@ -115,4 +116,4 @@ const LoginForm = () => {
     );
 };
 
-export default LoginForm;
+export default LoginFormFail;
