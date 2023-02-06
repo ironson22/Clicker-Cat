@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 19, 2023 at 07:21 PM
+-- Generation Time: Feb 06, 2023 at 08:20 AM
 -- Server version: 5.7.32
 -- PHP Version: 7.4.16
 
@@ -40,8 +40,12 @@ CREATE TABLE `Users` (
 --
 
 INSERT INTO `Users` (`ID`, `EMAIL`, `PASSWORD`, `NAME`, `ROLE`) VALUES
-(1, 'email@email.com', 'password', 'John Doe', 'USER'),
-(2, 'admin@email.com', 'password', 'Jane Doe', 'ADMIN');
+(1, 'email@email.com', 'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a', 'John Doe', 'USER'),
+(2, 'admin@email.com', 'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a', 'Jane Doe', 'ADMIN'),
+(3, 'test@test.com', 'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a', 'Test User', 'USER'),
+(4, 'encodingTest@email.com', 'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a', 'name lastname', 'USER'),
+(5, 'tester@tester.com', 'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a', 'Name Namerson', 'USER'),
+(6, 'LastEncodeTest@test.com', 'e7cf3ef4f17c3999a94f2c6f612e8a888e5b1026878e4e19398b23bd38ec221a', 'Namer Nameson', 'USER');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +65,7 @@ ALTER TABLE `Users`
 -- AUTO_INCREMENT for table `Users`
 --
 ALTER TABLE `Users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID of the user', AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID of the user', AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
