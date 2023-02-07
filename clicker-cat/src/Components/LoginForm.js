@@ -62,48 +62,48 @@ const LoginForm = () => {
         </section>
         <form onSubmit={handleFormSubmit}>
         <section className="section">
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-right">
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control has-icons-right">
               <input
-                class="input is-link is-medium"
+                className="input is-link is-medium"
                 type="email"
                 placeholder="Email"
                 onChange={updateEmail}
               />
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
+              <span className="icon is-small is-left">
+                <i className="fas fa-envelope"></i>
               </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
+              <span className="icon is-small is-right">
+                <i className="fas fa-exclamation-triangle"></i>
               </span>
             </div>
           </div>
-          <div class="field">
-            <label class="label">Password</label>
-            <div class="control has-icons-right">
+          <div className="field">
+            <label className="label">Password</label>
+            <div className="control has-icons-right">
               <input
-                class="input is-link is-medium"
+                className="input is-link is-medium"
                 type="password"
                 placeholder="Password"
                 onChange={updatePassword}
               />
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
+              <span className="icon is-small is-left">
+                <i className="fas fa-envelope"></i>
               </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
+              <span className="icon is-small is-right">
+                <i className="fas fa-exclamation-triangle"></i>
               </span>
             </div>
           </div>
 
           <div className="customCard">
-            <div class="field is-grouped">
-              <div class="control">
-                <button class="button is-link">Login</button>
+            <div className="field is-grouped">
+              <div className="control">
+                <button className="button is-link">Login</button>
               </div>
-              <div class="control">
-                <a class="button is-link is-outlined" href="/register">
+              <div className="control">
+                <a className="button is-link is-outlined" href="/register">
                   Register
                 </a>
               </div>

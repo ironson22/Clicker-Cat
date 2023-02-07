@@ -58,65 +58,65 @@ const RegisterForm = () => {
         </section>
         <section className="section">
           <form onSubmit={handleFormSubmit}>
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control has-icons-right">
+            <div className="field">
+              <label className="label">Email</label>
+              <div className="control has-icons-right">
                 <input
-                  class="input is-link is-medium"
+                  className="input is-link is-medium"
                   type="email"
                   placeholder="Email"
                   onChange={updateEmail}
                 />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
+                <span className="icon is-small is-left">
+                  <i className="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
+                <span className="icon is-small is-right">
+                  <i className="fas fa-exclamation-triangle"></i>
                 </span>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Password</label>
-              <div class="control has-icons-right">
+            <div className="field">
+              <label className="label">Password</label>
+              <div className="control has-icons-right">
                 <input
-                  class="input is-link is-medium"
+                  className="input is-link is-medium"
                   type="password"
                   placeholder="Password"
                   onChange={updatePassword}
                 />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
+                <span className="icon is-small is-left">
+                  <i className="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
+                <span className="icon is-small is-right">
+                  <i className="fas fa-exclamation-triangle"></i>
                 </span>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control has-icons-right">
+            <div className="field">
+              <label className="label">Name</label>
+              <div className="control has-icons-right">
                 <input
-                  class="input is-link is-medium"
+                  className="input is-link is-medium"
                   type="text"
                   placeholder="Name"
                   onChange={updateName}
                 />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
+                <span className="icon is-small is-left">
+                  <i className="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
+                <span className="icon is-small is-right">
+                  <i className="fas fa-exclamation-triangle"></i>
                 </span>
               </div>
             </div>
 
             <div className="customCard">
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link" type="submit">Register</button>
+              <div className="field is-grouped">
+                <div className="control">
+                  <button className="button is-link" type="submit">Register</button>
                 </div>
-                <div class="control">
-                  <a class="button is-link is-outlined" href="/">
+                <div className="control">
+                  <a className="button is-link is-outlined" href="/">
                     Login
                   </a>
                 </div>
