@@ -40,7 +40,12 @@ const LoginForm = () => {
     console.log(response.data);
     if (response.status === 200)
     {
-      navigate("/home");
+      navigate({
+        pathname: "/home",
+        search: createSearchParams({
+          role: response.data.role
+        }).toString()
+      });
     } else {
       navigate({
         pathname: "/",

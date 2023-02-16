@@ -35,3 +35,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.admin-button{
+    margin-top: 1%;
+    margin-left: 1%;
+}
