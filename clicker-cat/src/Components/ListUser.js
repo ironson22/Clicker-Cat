@@ -20,19 +20,41 @@ const ListUser = () => {
            loadUsers();
         }, [refresh])
     
+
+
     return(
         <div>
             {/* List the users that were returned from /users */}
-            {userList.map((user) => (
-                <div key={user.id}>
-                    <p>{user.email}</p>
-                    <p>{user.password}</p>
-                    <p>{user.name}</p>
-                    <p>{user.role}</p>
-                </div>
-            ))}
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                    {userList.map((user) => (
+                        <tr key={user.id}>
+                            <td>{user.email}</td>
+                            <td>{user.password}</td>
+                            <td>{user.name}</td>
+                            <td>{user.role}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 }
+
+//Previous code
+// {userList.map((user) => (
+//     <div key={user.id}>
+//         <p>{user.email}</p>
+//         <p>{user.password}</p>
+//         <p>{user.name}</p>
+//         <p>{user.role}</p>
+//     </div>
+// ))}
 
 export default ListUser;
