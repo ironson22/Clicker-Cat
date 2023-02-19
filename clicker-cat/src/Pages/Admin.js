@@ -2,7 +2,7 @@ import React from "react";
 import '../Styles/Bulma.css'
 import ListUser from "../Components/ListUser";
 
-const Register = () => {
+const Admin = () => {
     return(
         <div>
             <ListUser />
@@ -10,4 +10,4 @@ const Register = () => {
     );
 }
 
-export default Register;
+export default Admin;
