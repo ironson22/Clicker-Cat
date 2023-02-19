@@ -23,6 +23,7 @@ const ListUser = () => {
         const deleteUser = async (id) => {
             await dataSource.delete(`/users/${id}`);
             refresh = true;
+            window.location.reload();
         }
 
 
