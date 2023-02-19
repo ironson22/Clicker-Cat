@@ -20,7 +20,11 @@ const ListUser = () => {
            loadUsers();
         }, [refresh])
     
-
+        const deleteUser = async (id) => {
+            await dataSource.delete(`/users/${id}`);
+            refresh = true;
+        }
+        
 
     return(
         <div>
@@ -28,17 +32,21 @@ const ListUser = () => {
             <table border="1">
                 <tbody>
                     <tr>
+                        <th>ID</th>
                         <th>Email</th>
                         <th>Password</th>
                         <th>Name</th>
                         <th>Role</th>
+                        <th>Action</th>
                     </tr>
                     {userList.map((user) => (
                         <tr key={user.id}>
+                            <td>{user.id}</td>
                             <td>{user.email}</td>
                             <td>{user.password}</td>
                             <td>{user.name}</td>
                             <td>{user.role}</td>
+                            <td><button onClick={()=>deleteUser(user.id)}>Delete</button></td>
                         </tr>
                     ))}
                 </tbody>
