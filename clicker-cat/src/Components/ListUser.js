@@ -1,8 +1,8 @@
 import React, { useState }from "react";
 import '../Styles/Bulma.css'
 import '../Styles/CustomStyles.css'
-import { useNavigate } from "react-router-dom";
 import dataSource from "../datasource.js";
+import { useEffect } from "react";
 
 const ListUser = () => {
 
@@ -24,7 +24,7 @@ const ListUser = () => {
             await dataSource.delete(`/users/${id}`);
             refresh = true;
         }
-        
+
 
     return(
         <div>
@@ -54,15 +54,5 @@ const ListUser = () => {
         </div>
     );
 }
-
-//Previous code
-// {userList.map((user) => (
-//     <div key={user.id}>
-//         <p>{user.email}</p>
-//         <p>{user.password}</p>
-//         <p>{user.name}</p>
-//         <p>{user.role}</p>
-//     </div>
-// ))}
 
 export default ListUser;
